@@ -33,8 +33,8 @@ export default function Landing({ setPage }) {
   return (
     <div className="page active">
       <div className="hero">
-        <div className="hero-school">Program Daur Ulang SMAK PENABUR Harapan Indah · by Ecobassadors</div>
-        <div className="hero-badge">🌱 Program Daur Ulang Sekolah</div>
+        <div className="hero-school">Program Daur Uang SMAK PENABUR Harapan Indah · by Ecobassadors</div>
+        <div className="hero-badge">🌱 Program Daur Uang Sekolah</div>
         <h1>Bersama Kita Jaga<br/><em>Bumi Lebih Bersih</em></h1>
         <p>Catat sampah yang kamu kumpulkan, lihat kontribusimu, dan bersaing dengan teman-teman untuk menjadi pahlawan lingkungan!</p>
         <button className="btn-primary" onClick={() => setPage('input')}>✦ Mulai Input Data</button>
