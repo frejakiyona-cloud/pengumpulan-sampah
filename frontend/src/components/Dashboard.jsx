@@ -7,13 +7,14 @@ const wasteNames = {
   packaging_makanan:'📦 Packaging Makanan', 
   minyak_jelantah:'🫙 Minyak Jelantah', 
   kardus:'📫 Kardus', 
-  karton:'🗂️ Karton' 
+  karton:'🗂️ Karton',
+  logam:'🔩 Logam'
 };
 
-const wasteUnits = { botol_plastik:'Liter', minyak_jelantah:'Liter', kemasan_plastik:'Kg', packaging_makanan:'Kg', kardus:'Kg', karton:'Kg' };
+const wasteUnits = { botol_plastik:'Liter', minyak_jelantah:'Liter', kemasan_plastik:'Kg', packaging_makanan:'Kg', kardus:'Kg', karton:'Kg', logam:'Kg' };
 
 const initialData = {
-  totals: { kemasan_plastik:0, botol_plastik:0, minyak_jelantah:0, kardus:0, karton:0, packaging_makanan:0 },
+  totals: { kemasan_plastik:0, botol_plastik:0, minyak_jelantah:0, kardus:0, karton:0, packaging_makanan:0, logam:0 },
   leaderboard: []
 };
 
@@ -45,6 +46,7 @@ export default function Dashboard() {
           <div className="dash-card"><div className="dash-card-icon">📫</div><div className="dash-card-label">Kardus</div><div className="dash-card-value">{t.kardus.toFixed(1)}</div><div className="dash-card-unit">Kg</div></div>
           <div className="dash-card"><div className="dash-card-icon">🗂️</div><div className="dash-card-label">Karton</div><div className="dash-card-value">{t.karton.toFixed(1)}</div><div className="dash-card-unit">Kg</div></div>
           <div className="dash-card"><div className="dash-card-icon">📦</div><div className="dash-card-label">Packaging Makanan</div><div className="dash-card-value">{t.packaging_makanan.toFixed(1)}</div><div className="dash-card-unit">Kg</div></div>
+          <div className="dash-card"><div className="dash-card-icon">🔩</div><div className="dash-card-label">Logam</div><div className="dash-card-value">{t.logam.toFixed(1)}</div><div className="dash-card-unit">Kg</div></div>
         </div>
 
         <div className="bar-chart">

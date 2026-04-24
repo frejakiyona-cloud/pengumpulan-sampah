@@ -102,7 +102,8 @@ app.get('/api/dashboard', async (req, res) => {
       minyak_jelantah: 0,
       kardus: 0,
       karton: 0,
-      packaging_makanan: 0
+      packaging_makanan: 0,
+      logam: 0
     };
 
     totalsResult.rows.forEach(row => {

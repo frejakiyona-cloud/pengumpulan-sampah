@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { verifyCode, submitData } from '../utils/api';
 
-const wasteUnits = { botol_plastik:'Liter', minyak_jelantah:'Liter', kemasan_plastik:'Kg', packaging_makanan:'Kg', kardus:'Kg', karton:'Kg' };
+const wasteUnits = { botol_plastik:'Liter', minyak_jelantah:'Liter', kemasan_plastik:'Kg', packaging_makanan:'Kg', kardus:'Kg', karton:'Kg', logam:'Kg' };
 
 export default function InputForm() {
   const [tab, setTab] = useState('new');
@@ -125,6 +125,7 @@ export default function InputForm() {
                 <option value="minyak_jelantah">🫙 Minyak Jelantah</option>
                 <option value="kardus">📫 Kardus</option>
                 <option value="karton">🗂️ Karton</option>
+                <option value="logam">🔩 Logam</option>
               </select>
             </div>
             <div className="field-group">
