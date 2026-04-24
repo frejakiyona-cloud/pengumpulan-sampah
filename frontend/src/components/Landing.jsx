@@ -9,6 +9,7 @@ const wasteTypesInfo = [
   { id: 'kardus', icon: '📫', name: 'Kardus', unit: 'Kg' },
   { id: 'karton', icon: '🗂️', name: 'Karton', unit: 'Kg' },
   { id: 'logam', icon: '🔩', name: 'Logam', unit: 'Kg' },
+  { id: 'beling', icon: '🫗', name: 'Beling', unit: 'Kg' },
 ];
 
 export default function Landing({ setPage }) {
