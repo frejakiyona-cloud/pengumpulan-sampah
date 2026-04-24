@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <nav>
-        <div className="nav-logo"><span>🌿</span> Sampah Siswa</div>
+        <div className="nav-logo" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--text)' }}>Ecoquester</div>
         <div className="nav-links">
           <button className={`nav-link ${page === 'landing' ? 'active' : ''}`} onClick={() => setPage('landing')}>Beranda</button>
           <button className={`nav-link ${page === 'input' ? 'active' : ''}`} onClick={() => setPage('input')}>Input</button>
